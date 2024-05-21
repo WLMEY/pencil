@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Responsive Flexbox Example</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    display: flex;
+    flex-wrap: wrap; /* يسمح للعناصر بالانتقال إلى صف جديد عند الحاجة */
+  }
+
+  .item {
+    flex: 1 1 50%; /* العرض الافتراضي للعناصر هو 50% من الحاوية */
+    padding: 10px;
+    box-sizing: border-box;
+  }
+
+  @media (max-width: 768px) {
+    .item {
+      flex: 1 1 100%; /* العرض الكامل للعناصر على الشاشات الصغيرة */
+    }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="item" style="background-color: lightblue;">Item 1</div>
+  <div class="item" style="background-color: lightcoral;">Item 2</div>
+  <div class="item" style="background-color: lightgreen;">Item 3</div>
+  <div class="item" style="background-color: lightpink;">Item 4</div>
+</div>
+</body>
+</html>

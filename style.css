@@ -1,0 +1,334 @@
+*{
+    
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+/* background-color: white; */
+font-family: "Indie Flower", cursive;
+ 
+}
+
+nav{
+    /* background-color:#ff1; */
+    background-color: white;
+    border: 1px solid rgb(167, 162, 162);
+    border-radius: 15px;
+    width: 100vw;
+    height: 5vh;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+
+}
+nav .User_account{
+
+    /* background-color: aqua; */
+    background-color: white;
+    width:50%;
+    height:100%;
+    /* border-radius: 50%; */
+    /* transition: all 0.3s; */
+}
+nav .list{width: 50%;height: 100%;}
+nav .list ul{
+    height: 100%;
+    display: flex;
+    flex-direction:row;
+    justify-content: space-evenly;
+    align-items:center;
+    list-style-type: none;
+    font-size: 22px;
+    transition: all 0.3s;
+text-shadow: 1px 1px  3px  gray;
+
+}
+ /* nav .User_account:hover{
+    width:50vh;
+    height: 5vh;
+    border-radius: 20px;
+    animation:down 1s forwards;
+}  */
+
+/* 
+@keyframes down{
+    100%{
+        width:30vh;
+        height: 5vh;
+        border-radius: 50%;
+    }
+} */
+
+
+main{
+    /* background-color:#f91; */
+    background-color: white;
+    height: 80vh;
+    display: flex;
+
+}
+main .main_left{
+    /* background-color: #991; */
+    background-color: white;
+    width : 40%;
+    height: 100%;
+}
+main .main_left .nav{
+    width:80%;
+    height: 5vh;
+    /* background-color: antiquewhite; */
+    background-color: white;
+    border: 1px solid rgb(167, 162, 162);
+    border-radius: 15px;
+    margin: auto;
+    margin-top: 5vh;
+}
+main .main_left .nav ul {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+}
+main .main_left .nav ul li {
+    list-style-type: none;
+    font-size: 22px;
+}
+main .main_left .nav ul li:hover{
+cursor: pointer;
+}
+main .main_left .input_frame{
+    width: 100%;
+    height: 60%;
+    /* background-color: red; */
+    background-color: white;
+    /* text-align: center; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+main .main_left .input_frame textarea{ 
+font-size: 30px;
+border-radius: 15px;
+padding: 10px;
+color: rgb(88, 88, 88);
+/* width: 150px; */
+/* margin: auto; */
+}
+
+main .main_left .input_frame .submit_btn{
+    align-self:flex-start;
+    margin-left: 2vw;
+}
+#btn{
+    background-color: green;
+    border: none;
+    border-radius: 10px ;
+    width:7vw;
+    height: 4vh;
+    color: white;
+    font-size: 30px;
+    
+}
+
+main .main_right{
+    height: 100%;
+    width : 60%;
+    /* background-color: #b91; */
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+main .main_right .Video_frame{
+    background-color: gray;
+    width: 80%;
+    height: 70%;
+    border-radius: 15px;
+    overflow: hidden;
+}
+main .main_right .Video_frame video{
+    width :100%;
+    height: 100%;
+    filter: grayscale(95%);
+
+}
+
+
+
+footer{
+    width: 100vw;
+    height: 15vh;
+    /* background-color: bisque; */
+    background-color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 425px) {
+
+
+    nav{
+
+        width: 100vw;
+        height: 5vh;
+        display: flex;
+        flex-direction: row;
+        overflow: hidden;
+    
+    }
+    nav .User_account{
+    
+        width:30%;
+        height:100%;
+        margin-left: 3vw;
+        display: flex;
+        align-items: center;
+        font-weight: 900;
+        font-size: 24px;
+    }
+    nav .list{width: 100%;height: 100%;}
+    nav .list ul{
+        height: 100%;
+        display: flex;
+        flex-direction:row;
+        justify-content: space-evenly;
+        align-items:center;
+        list-style-type: none;
+        font-size: 22px;
+        transition: all 0.3s;
+    
+    }
+
+    
+    main{
+        height: 80vh;
+        display: flex;
+        flex-direction: column-reverse;
+    
+    }
+    main .main_left{
+        background-color: white;
+        width : 100%;
+        height: 50%;
+    }
+    /* main .main_left .nav{
+        width:80%;
+        height: 5vh;
+        background-color: white;
+        border: 1px solid rgb(167, 162, 162);
+        border-radius: 15px;
+        margin: auto;
+        margin-top: 5vh;
+    } */
+    /* main .main_left .nav ul {
+        display:flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        height: 100%;
+    }
+    main .main_left .nav ul li {
+        list-style-type: none;
+        font-size: 22px;
+    } */
+    /* main .main_left .nav ul li:hover{
+    cursor: pointer;
+    } */
+    main .main_left .input_frame{
+
+        width: 100vw;
+        height: 60%;
+        /* background-color: red; */
+        background-color: white;
+        /* text-align: center; */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    main .main_left .input_frame textarea{ 
+    font-size: 22px;
+    margin-top: 1vh;
+    /* border-radius: 15px; */
+    /* padding: 10px; */
+    /* color: rgb(88, 88, 88); */
+    width: 90%;
+    }
+    
+    main .main_left .input_frame .submit_btn{
+        align-self:flex-start;
+        margin-left: 1vh;
+    }
+    #btn{
+        /* background-color: green; */
+        /* border: none; */
+        /* border-radius: 10px ; */
+        width:17vw;
+        height: 4vh;
+        margin-left: 5vw;
+        margin-top: 2vw;
+        /* color: white; */
+        font-size: 22px;
+        
+    }
+    
+    main .main_right{
+        height: 50%;
+        width : 100vw;
+        /* background-color: #b91; */
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    main .main_right .Video_frame{
+        background-color: gray;
+        width: 80%;
+        height: 70%;
+        border-radius: 15px;
+        overflow: hidden;
+    }
+    main .main_right .Video_frame video{
+        width :100%;
+        height: 100%;
+        filter: grayscale(95%);
+    
+    }
+    
+    
+    
+    footer{
+        width: 100vw;
+        height: 15vh;
+        /* background-color: bisque; */
+        /* background-color: white; */
+    }
+    
+
+
+
+
+
+
+
+
+}
