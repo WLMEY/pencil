@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Language</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Patrick+Hand&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/rough.js/4.3.1/rough.min.js"></script>
+</head>
+<body>
+    <nav>
+        <div class="User_account">pencil</div>
+        <div class="list">
+            <ul>
+                <li>ENGLISH</li>
+                <li>1260</li>
+                <li># 51</li>
+            </ul>
+        </div>
+    </nav>
+    <main>
+        <div class="main_left">
+            <div class="nav">
+                <ul>
+                    <li id="microphone">Microphone</li>
+                    <li>5s</li>
+                    <li>10s</li>
+                    <li>20s</li>
+                    <li>none</li>
+                </ul>
+            </div>
+            <div class="input_frame">
+                <textarea placeholder="Enter your comments here" cols="50" rows="10" name="" id=""></textarea>
+                <button id="btn" class="submit_btn">submit</button>
+            </div>
+        </div>
+        <div class="main_right">
+            <div class="Video_frame">
+                <video controls src="Jack and the Beanstalk - UK English accent (TheFableCottage.com).mp4"></video>
+            </div>
+        </div>
+    </main>
+    <footer></footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const microphone = document.getElementById('microphone');
+            const svgNS = "http://www.w3.org/2000/svg";
+            
+            microphone.addEventListener('click', function () {
+                const existingLine = document.getElementById('hand-drawn-line');
+                if (existingLine) {
+                    existingLine.remove();
+                }
+
+                const svg = document.createElementNS(svgNS, 'svg');
+                svg.setAttribute('id', 'hand-drawn-line');
+                svg.setAttribute('width', '200');
+                svg.setAttribute('height', '100');
+
+                const rc = rough.svg(svg);
+                const line = rc.line(10, 50, 190, 50, {
+                    roughness: 2,
+                    stroke: 'black',
+                    strokeWidth: 2
+                });
+
+                svg.appendChild(line);
+                microphone.appendChild(svg);
+            });
+        });
+    </script>
+</body>
+</html>

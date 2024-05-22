@@ -1,35 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Language</title>
+    <title>pencil</title>
     <link rel="stylesheet" href="style.css">
+
+
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Patrick+Hand&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Patrick+Hand&display=swap"
+        rel="stylesheet">
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/rough.js/4.3.1/rough.min.js"></script> -->
+
+
+
+
+
+
 </head>
+
 <body>
-     
+
     <nav>
-        <div class="User_account"> Logo</div>
+        <div class="User_account"> pencil</div>
         <div class="list">
             <ul>
                 <li>ENGLSHE</li>
                 <li>1260</li>
-                <li>#51</li>
-               </ul>
+                <li># 51</li>
+            </ul>
         </div>
     </nav>
     <main>
         <div class="main_left">
+            <div class="extra_control">
+                <ul>
+                    <li onclick="back_sec()" >-5s</li>
+                    <li onclick="stop_Play_sec()" >stop/play</li>
+                    <li onclick="more_sec()" >+5s</li>
+                </ul>
+            </div>
             <div class="nav">
                 <ul>
-                    <li>Microphone</li>
-                    <li>5s</li>
-                    <li>10s</li>
-                    <li>20s</li>
-                    <li>none</li>
+                    <li onclick="select()" id="microphone"  >Microphone</li>
+                    <li onclick="select()" >5s</li>
+                    <li onclick="select()" >10s</li>
+                    <li onclick="select()" >20s</li>
+                    <li onclick="select()" >none</li>
                 </ul>
             </div>
             <div class="input_frame">
@@ -40,13 +60,13 @@
         </div>
         <div class="main_right">
             <div class="Video_frame">
-                <video  controls src="Jack and the Beanstalk - UK English accent (TheFableCottage.com).mp4"></video>
+                <video controls src="assets/Jack and the Beanstalk - UK English accent (TheFableCottage.com).mp4"></video>
             </div>
         </div>
-        
+
     </main>
     <footer>
-<!-- <hr color="black"> -->
+        <!-- <hr color="black"> -->
     </footer>
 
 
@@ -55,4 +75,5 @@
 
     <script src="main.js"></script>
 </body>
+
 </html>

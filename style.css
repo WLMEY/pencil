@@ -1,48 +1,70 @@
-*{
-    
-padding: 0;
-margin: 0;
-box-sizing: border-box;
-/* background-color: white; */
-font-family: "Indie Flower", cursive;
- 
+* {
+
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* background-color: white; */
+    font-family: "Indie Flower", cursive;
+    /* background-image: url("/pexels-kaip-1341279.jpg"); */
+    font-weight: 700;
+
+
 }
 
-nav{
+/* body{
+    width: 50vw;
+} */
+
+nav {
     /* background-color:#ff1; */
     background-color: white;
     border: 1px solid rgb(167, 162, 162);
     border-radius: 15px;
-    width: 100vw;
+    width: 100%;
     height: 5vh;
     display: flex;
     flex-direction: row;
     overflow: hidden;
+    margin-top: 5px;
 
 }
-nav .User_account{
+
+nav .User_account {
 
     /* background-color: aqua; */
     background-color: white;
-    width:50%;
-    height:100%;
+    width: 50%;
+    height: 100%;
+    /* width:30%;
+    height:100%; */
+    margin-left: 3vw;
+    display: flex;
+    align-items: center;
+    font-weight: 900;
+    font-size: 24px;
     /* border-radius: 50%; */
     /* transition: all 0.3s; */
 }
-nav .list{width: 50%;height: 100%;}
-nav .list ul{
+
+nav .list {
+    width: 50%;
+    height: 100%;
+}
+
+nav .list ul {
     height: 100%;
     display: flex;
-    flex-direction:row;
+    flex-direction: row;
     justify-content: space-evenly;
-    align-items:center;
+    align-items: center;
     list-style-type: none;
     font-size: 22px;
     transition: all 0.3s;
-text-shadow: 1px 1px  3px  gray;
-
+    /* text-shadow: 1px 1px  3px  gray; */
+    font-size: 30px;
 }
- /* nav .User_account:hover{
+
+/* nav .User_account:hover{
     width:50vh;
     height: 5vh;
     border-radius: 20px;
@@ -59,21 +81,23 @@ text-shadow: 1px 1px  3px  gray;
 } */
 
 
-main{
+main {
     /* background-color:#f91; */
     background-color: white;
     height: 80vh;
     display: flex;
 
 }
-main .main_left{
+
+main .main_left {
     /* background-color: #991; */
-    background-color: white;
-    width : 40%;
+    /* backgroun/d-color: white; */
+    width: 40%;
     height: 100%;
 }
-main .main_left .nav{
-    width:80%;
+
+main .main_left .nav {
+    width: 80%;
     height: 5vh;
     /* background-color: antiquewhite; */
     background-color: white;
@@ -82,21 +106,25 @@ main .main_left .nav{
     margin: auto;
     margin-top: 5vh;
 }
+
 main .main_left .nav ul {
-    display:flex;
+    display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
     height: 100%;
 }
+
 main .main_left .nav ul li {
     list-style-type: none;
     font-size: 22px;
 }
-main .main_left .nav ul li:hover{
-cursor: pointer;
+
+main .main_left .nav ul li:hover {
+    cursor: pointer;
 }
-main .main_left .input_frame{
+
+main .main_left .input_frame {
     width: 100%;
     height: 60%;
     /* background-color: red; */
@@ -107,49 +135,53 @@ main .main_left .input_frame{
     justify-content: space-evenly;
     align-items: center;
 }
-main .main_left .input_frame textarea{ 
-font-size: 30px;
-border-radius: 15px;
-padding: 10px;
-color: rgb(88, 88, 88);
-/* width: 150px; */
-/* margin: auto; */
+
+main .main_left .input_frame textarea {
+    font-size: 30px;
+    border-radius: 15px;
+    padding: 10px;
+    color: rgb(88, 88, 88);
+    /* width: 150px; */
+    /* margin: auto; */
 }
 
-main .main_left .input_frame .submit_btn{
-    align-self:flex-start;
+main .main_left .input_frame .submit_btn {
+    align-self: flex-start;
     margin-left: 2vw;
 }
-#btn{
+
+#btn {
     background-color: green;
     border: none;
-    border-radius: 10px ;
-    width:7vw;
+    border-radius: 10px;
+    width: 7vw;
     height: 4vh;
     color: white;
     font-size: 30px;
-    
+
 }
 
-main .main_right{
+main .main_right {
     height: 100%;
-    width : 60%;
+    width: 60%;
     /* background-color: #b91; */
     background-color: white;
     display: flex;
     justify-content: center;
     align-items: center;
-    
+
 }
-main .main_right .Video_frame{
+
+main .main_right .Video_frame {
     background-color: gray;
     width: 80%;
     height: 70%;
     border-radius: 15px;
     overflow: hidden;
 }
-main .main_right .Video_frame video{
-    width :100%;
+
+main .main_right .Video_frame video {
+    width: 100%;
     height: 100%;
     filter: grayscale(95%);
 
@@ -157,7 +189,7 @@ main .main_right .Video_frame video{
 
 
 
-footer{
+footer {
     width: 100vw;
     height: 15vh;
     /* background-color: bisque; */
@@ -166,6 +198,17 @@ footer{
 
 
 
+#microphone {
+    cursor: pointer;
+    position: relative;
+}
+
+#hand-drawn-line {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 
 
 
@@ -178,66 +221,81 @@ footer{
 
 
 
+main .main_left .extra_control{
+    display: none;
+
+}
 
 
+@media (max-width: 868px) {
 
 
-@media (max-width: 425px) {
-
-
-    nav{
+    nav {
 
         width: 100vw;
         height: 5vh;
         display: flex;
         flex-direction: row;
         overflow: hidden;
-    
+        
+
     }
-    nav .User_account{
-    
-        width:30%;
-        height:100%;
+
+    nav .User_account {
+
+        width: 30%;
+        height: 100%;
         margin-left: 3vw;
         display: flex;
         align-items: center;
         font-weight: 900;
         font-size: 24px;
     }
-    nav .list{width: 100%;height: 100%;}
-    nav .list ul{
+
+    nav .list {
+        width: 100%;
+        height: 100%;
+    }
+
+    nav .list ul {
         height: 100%;
         display: flex;
-        flex-direction:row;
+        flex-direction: row;
         justify-content: space-evenly;
-        align-items:center;
+        align-items: center;
         list-style-type: none;
         font-size: 22px;
         transition: all 0.3s;
-    
+
     }
 
-    
-    main{
+
+    main {
         height: 80vh;
         display: flex;
         flex-direction: column-reverse;
-    
+
     }
-    main .main_left{
+
+    main .main_left {
         background-color: white;
-        width : 100%;
+        width: 100%;
         height: 50%;
+        display: flex;
+        flex-direction:column;
+        align-items: center;
+        justify-content: center;
     }
-    /* main .main_left .nav{
+
+    main .main_left .nav{
         width:80%;
-        height: 5vh;
+        height:none;
         background-color: white;
         border: 1px solid rgb(167, 162, 162);
         border-radius: 15px;
-        margin: auto;
-        margin-top: 5vh;
-    } */
+        /* margin: none; */
+        margin-bottom: 0.8vh;
+    }
     /* main .main_left .nav ul {
         display:flex;
         flex-direction: row;
@@ -252,7 +310,7 @@ footer{
     /* main .main_left .nav ul li:hover{
     cursor: pointer;
     } */
-    main .main_left .input_frame{
+    main .main_left .input_frame {
 
         width: 100vw;
         height: 60%;
@@ -264,68 +322,93 @@ footer{
         justify-content: space-evenly;
         align-items: center;
     }
-    main .main_left .input_frame textarea{ 
-    font-size: 22px;
-    margin-top: 1vh;
-    /* border-radius: 15px; */
-    /* padding: 10px; */
-    /* color: rgb(88, 88, 88); */
-    width: 90%;
+
+    main .main_left .input_frame textarea {
+        font-size: 22px;
+        margin-top: 1vh;
+        /* border-radius: 15px; */
+        /* padding: 10px; */
+        /* color: rgb(88, 88, 88); */
+        width: 90%;
     }
-    
-    main .main_left .input_frame .submit_btn{
-        align-self:flex-start;
+
+    main .main_left .input_frame .submit_btn {
+        align-self: flex-start;
         margin-left: 1vh;
     }
-    #btn{
+
+    #btn {
         /* background-color: green; */
         /* border: none; */
         /* border-radius: 10px ; */
-        width:17vw;
+        width: 17vw;
         height: 4vh;
         margin-left: 5vw;
         margin-top: 2vw;
         /* color: white; */
         font-size: 22px;
-        
+
     }
-    
-    main .main_right{
+
+    main .main_right {
         height: 50%;
-        width : 100vw;
+        width: 100vw;
         /* background-color: #b91; */
         background-color: white;
         display: flex;
         justify-content: center;
         align-items: center;
-        
+
     }
-    main .main_right .Video_frame{
+
+    main .main_right .Video_frame {
         background-color: gray;
         width: 80%;
         height: 70%;
         border-radius: 15px;
         overflow: hidden;
     }
-    main .main_right .Video_frame video{
-        width :100%;
+
+    main .main_right .Video_frame video {
+        width: 100%;
         height: 100%;
         filter: grayscale(95%);
-    
+
     }
-    
-    
-    
-    footer{
+
+
+
+    footer {
         width: 100vw;
         height: 15vh;
         /* background-color: bisque; */
         /* background-color: white; */
     }
+
+
+
+    main .main_left .extra_control{
+        display: block;
+        border: 1px solid black;
+        border-radius: 10px;
+        width: 50%;
+        /* margin: auto; */
+        margin-bottom: -3vh;
+
     
 
+    }
+    main .main_left .extra_control ul {
+        height: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        list-style-type: none;
 
 
+
+
+    }
 
 
 
